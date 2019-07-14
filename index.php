@@ -4,11 +4,12 @@
 	<title>Maulana Dev</title>
 </head>
 <body>
-<?php
-for($i=0;$i>100;$i++)
-{
-echo "Perulangan ke ".$i."<br>";
-}
-?>
+<button id="ok">OK</button>
 </body>
 </html>
+<script>
+const button = document.getElementById('ok');
+button.addEventListener('click', function(){
+console.log('woke');
+});
+</script>
