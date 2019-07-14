@@ -4,6 +4,11 @@
 	<title>Maulana Dev</title>
 </head>
 <body>
-<button>OK</button>
+<?php
+for($i=0;$i>100:$i++)
+{
+echo "Perulangan ke ".$i."<br>";
+}
+?>
 </body>
 </html>
