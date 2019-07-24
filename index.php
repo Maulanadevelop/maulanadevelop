@@ -6,7 +6,26 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1> Hi There </h1>
+<?php
+$a = [1,2,3,4,5,6,7,8,9];
+$b = [];
+$bilangan = 89;
+
+for($i=1;$i <= $bilangan; $i++){
+	if($bilangan % $i == 0){
+	array_push($b, $i);
+	}
+}
+foreach($b as $c){
+
+}
+
+if(count($b) > 2){
+echo $bilangan." BUKAN BILANGAN PRIMA";
+}else{
+echo $bilangan." BILANGAN PRIMA";
+}
+?>
 </body>
 </html>
 <script>
