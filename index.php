@@ -7,25 +7,25 @@
 </head>
 <body>
 <?php
-$a = [1,2,3,4,5,6,7,8,9];
-$b = [];
-$bilangan = 89;
+$a = [];
+$bilangan = 72;
 
 for($i=1;$i <= $bilangan; $i++){
 	if($bilangan % $i == 0){
-	array_push($b, $i);
+	array_push($a, $i);
 	}
 }
-foreach($b as $c){
 
+echo $bilangan." bisa dibagi dengan ";
+foreach($a as $b){
+echo $b.",";
 }
 
-if(count($b) > 2){
-echo $bilangan." BUKAN BILANGAN PRIMA";
+if(count($a) > 2){
+echo "<br>".$bilangan." BUKAN BILANGAN PRIMA";
 }else{
-echo $bilangan." BILANGAN PRIMA";
+echo "<br>".$bilangan." BILANGAN PRIMA";
 }
-?>
 </body>
 </html>
 <script>
